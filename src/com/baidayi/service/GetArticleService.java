@@ -37,8 +37,10 @@ public class GetArticleService {
 					Article product = new Article();
 					product.setUrl("http://www.bdysc.com"
 							+ element.select("a").attr("href"));
-					product.setName(element.select("a").attr("title"));
-					product.setTime(element.child(1).text());
+					//product.setName(element.select("a").attr("title"));//add by taoqilei 2017-5-16
+					product.setName("123456");
+					//product.setTime(element.child(1).text()); //add by taoqilei 2017-5-16
+					product.setTime("abcdefg");//add by taoqilei 2017-5-16
 					// Log.i("URL",element.child(1).text());
 					products.add(product);
 				}
