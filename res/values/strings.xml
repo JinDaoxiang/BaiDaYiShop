@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">百大易商城</string>
+    <string name="app_name">养</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="splash_version_info">百大易商城客户端\n\nVersion 1.0.0</string>
+    <string name="splash_version_info">养生客户端\n\nVersion 1.0.0</string>
 
     <!-- 底部的tab -->
     <string name="tab_home">首页</string>
-    <string name="tab_buyying">生活贴士</string>
+    <string name="tab_buyying">定制标题</string>
     <string name="tab_shopping">购物车</string>
     <string name="tab_userCenter">个人中心</string>
     <!-- fragment_shopping -->
@@ -48,7 +48,7 @@
 
     <!-- 注册 -->
     <string name="registerinfo">输入手机号后，点击"获取密码"，系统会自动向你的手机发送一条短信</string>
-    <string name="register_tip">【温馨提示】\n 1.使用手机号注册免费 \n 2.此手机号用来登录百大易商城\n 3.你还可以选择其他注册方式</string>
+    <string name="register_tip">【温馨提示】\n 1.使用手机号注册免费 \n 2.此手机号用来登录养生客户端\n 3.你还可以选择其他注册方式</string>
     <string name="register_normal_tip">【温馨提示】\n 1.请输入有效邮箱进行注册绑定哦！\n 2.下次登录此邮箱用来登录百大易商城\n 3.当然如果觉得麻烦，可以直接跳过，也不影响您购物的哦！注册用户进入购买商品有相应积分，积分课兑换礼品的哦！不过我们的积分只对注册的用户有效呢。</string>
     <string name="register_in_normal">普通用户注册</string>
     <string name="register_normal_useraccount">帐户名：</string>
