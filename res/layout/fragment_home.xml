@@ -20,6 +20,8 @@
             android:configChanges="orientation|keyboardHidden"
             android:cursorVisible="false"
             android:hint="@string/search"
+            android:textColor="@color/deepskyblue"
+            android:textColorHint="@color/deepskyblue"
             android:padding="2dp" />
 
         <ImageButton
