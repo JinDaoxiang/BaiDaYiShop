@@ -118,7 +118,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			finish();
 		} else {
 			isExit = true;
-			Toast.makeText(MainActivity.this, "再按一次退出百大易商城", Toast.LENGTH_SHORT)
+			Toast.makeText(MainActivity.this, "再按一次退出养生商城", Toast.LENGTH_SHORT)
 					.show();
 			timeTask = new TimerTask() {
 
