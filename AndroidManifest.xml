@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.baidayi.activity"
     android:versionCode="1"
@@ -162,6 +161,10 @@
         <activity
             android:name="com.baidayi.activity.MenuServiceActivity"
             android:label="@string/title_activity_menu_food" >
+        </activity>
+        <activity
+            android:name="com.baidayi.activity.SearchEditActivity"
+            android:label="@string/title_activity_search" >
         </activity>
     </application>
 
