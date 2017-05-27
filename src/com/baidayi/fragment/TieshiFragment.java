@@ -121,10 +121,18 @@ public class TieshiFragment extends Fragment implements IXListViewListener {
 			onLoad();
 			adapter.setProducts(result);
 			adapter.notifyDataSetChanged();
-			if (ListUtil.articlekey.equals("暂无公告 ！")) {
+			
+			
+/*			if (ListUtil.articlekey.equals("暂无公告 ！")) {
 				Toast.makeText(mActivity, "亲~~我们正在努力更新中~~", Toast.LENGTH_SHORT)
 						.show();
 			} else if (result.size() == 0) {
+				Toast.makeText(mActivity, "请检查你的网络链接", Toast.LENGTH_SHORT)
+						.show();
+			}*/
+			
+			
+			if (result.size() == 0) {
 				Toast.makeText(mActivity, "请检查你的网络链接", Toast.LENGTH_SHORT)
 						.show();
 			}
