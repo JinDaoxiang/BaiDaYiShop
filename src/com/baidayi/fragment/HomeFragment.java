@@ -31,6 +31,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+
+import com.baidayi.activity.SearchEditActivity;
 /**
  * 首页内容显示
  * 
@@ -167,6 +169,9 @@ public class HomeFragment extends Fragment implements OnClickListener {
 		title_share.setOnClickListener(this);
 		fragment_home_edt = (EditText) mParent
 				.findViewById(R.id.fragment_home_edt);
+		
+		fragment_home_edt.setOnClickListener(this);
+		
 		title_search = (ImageButton) mParent.findViewById(R.id.title_search);
 		title_search.setOnClickListener(this);
 
@@ -298,11 +303,17 @@ public class HomeFragment extends Fragment implements OnClickListener {
 		}
 	}
 
-	//顶部导航栏点击事件
+	// 顶部导航栏点击事件
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.title_search://搜索
+		case R.id.fragment_home_edt://taoqilei 2017-5-26
+			intent = new Intent();
+			intent.setClass(mActivity, SearchEditActivity.class);
+			startActivity(intent);
+			break;
+		
+		case R.id.title_search:// 搜索
 			search = fragment_home_edt.getText().toString();
 			intent = new Intent();
 			intent.setClass(mActivity, ProductListActivity.class);
@@ -320,7 +331,7 @@ public class HomeFragment extends Fragment implements OnClickListener {
 			intent.putExtra("position", 10);
 			startActivity(intent);
 			break;
-		case R.id.title_share://分享
+		case R.id.title_share:// 分享
 			intent = new Intent();
 			String currentTrackMessage = "让小伙伴们知道百大易商城"
 					+ "http://www.bdysc.com/";
@@ -332,7 +343,7 @@ public class HomeFragment extends Fragment implements OnClickListener {
 		}
 	}
 
-	//gbk转换到utf-8
+	// gbk转换到utf-8
 	public byte[] gbk2utf8(String chenese) {
 		char c[] = chenese.toCharArray();
 		byte[] fullByte = new byte[3 * c.length];
